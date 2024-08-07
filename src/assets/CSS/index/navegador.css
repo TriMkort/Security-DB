@@ -1,0 +1,95 @@
+.cabecera {
+    display: flex;
+    font-size: 20px;
+    color: white;
+    margin: 10px 10px 0px 10px;
+}
+#imagen {
+    display: inline;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#imagen #titulo #inicio {
+    font-size: 30px;
+    margin: 16px 10px 10px 30px;
+    cursor: pointer;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#imagen #titulo #inicio a {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#imagen #contenido {
+    flex: 1;
+    justify-content: center;
+}
+
+#imagen #contenido ol{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+#imagen #contenido ol li {
+    display: inline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    padding: 10px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#imagen #contenido ol li a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#imagen #lista {
+    flex: 1;
+    justify-content: center;
+    height: auto;
+}
+
+#imagen #lista ol li {
+    float: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+    display: inline;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+#imagen #lista ol li a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#imagen #titulo #inicio:hover{
+    font-size: 35px;
+}
+
+#imagen #contenido ol li:hover {
+    border: 1px solid white;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+#imagen #lista ol li:hover {
+    border: 1px solid white;
+    border-radius: 10px;
+    opacity: 0.8;
+}

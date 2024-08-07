@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.login-box{
+    position: absolute;
+    width: 320px;
+     height: 420px;
+     background: rgb(15, 30, 31);
+     color: rgb(255, 255, 255);
+     opacity: 0.97;
+     top: 59%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     box-sizing: border-box;
+     padding: 70px 30px;
+     border-radius: 13%; 
+
+}
+
+
+
+.login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    
+    
+}
+.login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    
+    
+}
+.login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    
+}
+
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #1094ff;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+    border-bottom: 5px solid #3ab0ff;
+    font-size: 18px;
+    padding: 10px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    
+    
+}
+
+.login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #25d0ee;
+    color: #000;
+    
+}
+
+.login-box input[type="submit"]:active {
+    position: relative;
+    top: 5px;
+    border-bottom: none;
+    box-shadow: inset 1px 1px 2px black, 2px 2px 2px silver;
+    
+}
+
+.login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+    
+}
+
+.login-box a:hover {
+    color: #fff;
+}
+
+.usuario_corr{
+    color: red;
+}
+
+.usuario_inco{
+    color:rgb(28, 209, 28);
+}
+
+.cerrar{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.btn-cerrar-popup{
+    font-size: 18px !important;
+    line-height: 16px;
+    text-align: right;
+    color: #bbbbbb;
+    transition: .3s ease all;
+}
+
+.btn-cerrar-popup:hover{
+    color: #000;
+    
+}
+
+
+.overlay{
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    
+}
+.overlay.active{
+    visibility: visible;
+}
+
+body{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    min-height: 100vh;
+    background: url("../../imagenes/fondo.jpg");
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    width: 25%;
+    opacity: 0.4;
+    position: absolute;
+    left: 100px;
+    top: 3cm;
+}
+.contenido{
+    width: 100%;
+    right: 300px;
+    left: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenido .btn{
+    position: relative;
+    width: 155px;
+    height: 50px;
+    margin: 10px;
+}
+
+.contenido .btn a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+
+.contenido .btn:hover a{
+    letter-spacing: 3px;
+}
+
+.contenido .btn a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255,2555,255,0.15),transparent);
+    transform: skew(45deg) translateX(0);
+    transition: 0.5s;
+}
+
+.contenido .btn:hover a::before{
+    transform: skew(45deg) translateX(200%);
+}
+.contenido .btn::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: red;
+    border-radius: 10px;
+    transition: 0.5s; 
+    transition-delay: 0s;
+}
+
+.contenido .btn:hover::before{
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+
+.contenido .btn::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: red;
+    border-radius: 10px;
+    transition: 0.5s; 
+    transition-delay: 0s;
+}
+
+.contenido .btn:hover::after{
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+
+.contenido .btn:nth-child(1)::before,
+.contenido .btn:nth-child(1)::after
+{
+    background: #ff1f71;
+    box-shadow: 0 0 5px #ff1f71,
+    0 0 15px #ff1f71,
+    0 0 30px #ff1f71,
+    0 0 60px #ff1f71;
+}
+
+.contenido .btn:nth-child(2)::before,
+.contenido .btn:nth-child(2)::after
+{
+    background: #217aff;
+    box-shadow: 0 0 5px #217aff,
+    0 0 15px #217aff,
+    0 0 30px #217aff,
+    0 0 60px #217aff;
+}
+
+.contenido .btn:nth-child(3)::before,
+.contenido .btn:nth-child(3)::after
+{
+    background: #1edd45;
+    box-shadow: 0 0 5px #1edd45,
+    0 0 15px #1edd45,
+    0 0 30px #1edd45,
+    0 0 60px #1edd45;
+}
+
+.btn-neon{
+    position: absolute;
+    top: 250px;
+    left: 1050px;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    height: 60px;
+}
+.btn-neon:hover{
+    background: rgb(247, 54, 54);
+    box-shadow: 0 0 10px rgb(247, 54, 54), 0 0 40px rgb(247, 54, 54), 0 0 80px rgb(247, 54, 54);
+    transition-delay: 1s;
+ }
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,rgb(247, 54, 54));
+ }
+ .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,rgb(247, 54, 54));
+}
+ .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,rgb(247, 54, 54));
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,rgb(247, 54, 54));
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.parrafo{
+    position: relative;
+    top: 60px;
+    right: 170px;
+}
+
+.parrafo1{
+    position: relative;
+    text-align: center;
+    font-size:20px;
+    top: 60px;
+    right: 270px;
+}

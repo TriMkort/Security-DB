@@ -1,0 +1,111 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../imagenes/Fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.cabecera {
+    display: flex;
+    font-size: 20px;
+    color: white;
+    margin: 10px 10px 0px 10px;
+}
+
+#imagen {
+    display: inline;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#imagen #titulo #inicio {
+    font-size: 30px;
+    margin: 16px 10px 10px 30px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#imagen #titulo #inicio a {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#imagen #contenido {
+    flex: 1;
+    justify-content: center;
+}
+
+#imagen #contenido ol li {
+    display: inline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#imagen #contenido ol li a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#imagen #lista {
+    flex: 1;
+    justify-content: center;
+    height: auto;
+}
+
+#imagen #lista ol li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+    display: inline;
+    margin-top: 20px;
+}
+
+#imagen #lista ol li a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#imagen #contenido ol li:hover {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#imagen #lista ol li:hover {
+    border: 1px solid black;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width:1330px) {
+    body {
+        background-image: url("../imagenes/Fondo.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .cabecera {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+

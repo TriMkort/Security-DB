@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../../imagenes/Fondo.jpg");
+    background-repeat:repeat-y;
+    background-size:100%;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+
