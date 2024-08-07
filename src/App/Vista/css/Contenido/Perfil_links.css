@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.lista-perfil{
+    width: 100%;
+    height: auto;
+    background-color:#64B5F6;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.lista-perfil img{
+    width: 10%;
+    height: 100%;
+}
+
+.lista-perfil #lista-salida li{
+    list-style: none;
+    padding: 20px;
+    float: right;
+    margin-top: 7px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lista-perfil #lista-salida li:hover{
+    padding: 20px;
+    background-color:#1E88E5;
+}
+
+.lista-perfil #lista-salida li a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.lista-perfil #lista-salida li a:hover{
+    color: white;
+    text-align: center;
+}
+
+.contenido-lista-datos{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.contenido-lista-datos #lista-datos{
+    width: 13%;
+    height: auto;
+    border: 1px solid #080707;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.contenido-lista-datos #lista-datos li{
+    list-style: none;
+    padding: 10px;
+}
+
+.contenido-lista-datos #lista-datos li:hover{
+    padding: 10px;
+    background-color: #1E88E5;
+}
+
+.contenido-lista-datos #lista-datos li a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.contenido-lista-datos #lista-datos li a:hover{
+    color: white;
+    text-align: center;
+}
+
+section{
+    width: 80%;
+    height: auto;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.alertaverde{
+    padding: 20px;
+    background-color:lightgreen ;
+    border: 1px solid #39a275;
+    border-radius: 5px;
+    color: greenyellow;
+}
+
+.alertaroja{
+    padding: 15px;
+    background-color:rgb(246, 3, 3) ;
+    border: 1px solid #35060f;
+    border-radius: 5px;
+    color: rgb(251, 245, 245);
+}
+    

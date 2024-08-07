@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade&display=swap");
+
+section{
+    position: relative;
+    display: flex;
+    min-height: 30vh; 
+}
+
+#texto{
+    width: 40%;
+    color: whitesmoke;
+    margin: 10px;
+    position: relative;
+     left: 60px;
+     top: 110px;
+}
+
+#texto h2{
+    margin-bottom: 20px;
+    font-family: 'Abril Fatface', cursive;
+    font-size:60px;
+}
+
+#texto p{
+    margin-top: 30px;
+    font-family: 'Scheherazade', serif;
+    font-size: 30px;
+}
+
+#logoHuella{
+    width: 25%;
+    background-color: white;
+    opacity: 0.4;
+    position: absolute;
+     left: 58%;
+     top: 3cm;
+}

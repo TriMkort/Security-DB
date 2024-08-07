@@ -1,0 +1,60 @@
+table, th{
+    font-size: 18px;
+    text-align: center;
+    width:900px;
+    float: center;
+}
+
+.controls {
+    width: 80%;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 2px solid rgb(8, 40, 131);
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(8, 40, 131);
+}
+
+.boton{
+    color: #f6f6f8;
+    align-self:center;
+    font-family: 'calibri';
+    font-size: 22px;
+    background:  #200229;
+    transition-duration: 0.5s;
+    padding: 10px 25px;
+    border-radius: 4px;
+   
+}
+
+.boton:hover{
+    background-color:#ffffff;
+    color:  #200229;  
+}
+
+body {
+    background-color: #fffeff;
+  }
+
+#asterisco{
+    color: red;
+    display:inline;
+}
+
+.alertaverde{
+    padding: 20px;
+    background-color:lightgreen ;
+    border: 1px solid #39a275;
+    border-radius: 5px;
+    color: greenyellow;
+}
+
+.alertaroja{
+    padding: 15px;
+    background-color:rgb(206, 133, 133);
+    border: 1px solid #aa243d;
+    border-radius: 5px;
+    color: rgb(251, 245, 245);
+}

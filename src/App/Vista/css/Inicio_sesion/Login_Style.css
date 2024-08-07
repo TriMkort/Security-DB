@@ -1,0 +1,8 @@
+.errorrojo{
+    padding:10px;
+    border:1px solid rgb(250, 25, 25);
+    border-radius: 8px;
+    background-color:rgb(216, 125, 125);
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
